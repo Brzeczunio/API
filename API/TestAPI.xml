@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestAPI</name>
+    </assembly>
+    <members>
+        <member name="M:TestAPI.Controllers.AccountController.LoginUser(TestAPI.Controllers.Models.Requests.UserLoginRequest)">
+            <summary>
+            Logs user
+            </summary>
+            <response code="200">User logged in</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.OrdersController.GetOrders(System.Int32)">
+            <summary>
+            Retrieves an orders list
+            </summary>
+            <response code="200">Orders retrieved</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.OrdersController.GetOrdersV2(System.Int32)">
+            <summary>
+            Retrieves an orders list
+            </summary>
+            <response code="200">Orders retrieved</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.OrdersController.GetOrderById(System.Int32,System.Int32)">
+            <summary>
+            Retrieves a specific order fer user id
+            </summary>
+            <response code="200">Order retrieved</response>
+            <response code="404">Oops! Order not found</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.OrdersController.GetOrderByIdV2(System.Int32,System.Int32)">
+            <summary>
+            Retrieves a specific order fer user id
+            </summary>
+            <response code="200">Order retrieved</response>
+            <response code="404">Oops! Order not found</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.OrdersController.AddOrder(System.Int32,TestAPI.Controllers.Models.Requests.OrderRequest)">
+            <summary>
+            Creates a specific order for user id
+            </summary>
+            <response code="201">Order created</response>
+            <response code="400">Order has missing/invalid values</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.OrdersController.AddOrderV2(System.Int32,TestAPI.Controllers.Models.Requests.OrderRequest)">
+            <summary>
+            Creates a specific order for user id
+            </summary>
+            <response code="201">Order created</response>
+            <response code="400">Order has missing/invalid values</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.OrdersController.UpdateOrder(System.Int32,System.Int32,TestAPI.Controllers.Models.Requests.OrderRequest)">
+            <summary>
+            Updates a specific order for user id
+            </summary>
+            <response code="200">Order updated</response>
+            <response code="400">Order has missing/invalid values</response>
+            <response code="404">Oops! Order not found</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.OrdersController.DeleteOrder(System.Int32,System.Int32)">
+            <summary>
+            Deletes a specific order for user id
+            </summary>
+            <response code="200">Order deleted</response>
+            <response code="404">Oops! Order not found</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.ProductsController.GetProducts">
+            <summary>
+            Retrieves a products list
+            </summary>
+            <response code="200">Products retrieved</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.ProductsController.GetProductById(System.Int32)">
+            <summary>
+            Retrieves a specific product by unique id
+            </summary>
+            <response code="200">Product retrieved</response>
+            <response code="404">Oops! Product not found</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.ProductsController.AddProduct(TestAPI.Controllers.Models.Requests.ProductRequest)">
+            <summary>
+            Creates a specific product
+            </summary>
+            <response code="201">Product created</response>
+            <response code="400">Product has missing/invalid values</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.ProductsController.UpdateProduct(System.Int32,TestAPI.Controllers.Models.Requests.ProductRequest)">
+            <summary>
+            Updates a specific product by unique id
+            </summary>
+            <response code="200">Product updated</response>
+            <response code="400">Product has missing/invalid values</response>
+            <response code="404">Oops! Product not found</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            Deletes a specific product by unique id
+            </summary>
+            <response code="200">Product deleted</response>
+            <response code="404">Oops! Product not found</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.TokenController.RefreshBearer(TestAPI.Controllers.Models.Responses.TokenInfo)">
+            <summary>
+            Refreshes token
+            </summary>
+            <response code="200">Token refreshed</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.UsersController.GetUsers">
+            <summary>
+            Retrieves a users list
+            </summary>
+            <response code="200">Users retrieved</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.UsersController.GetUserById(System.Int32)">
+            <summary>
+            Retrieves a specific user by unique id
+            </summary>
+            <response code="200">User retrieved</response>
+            <response code="404">Oops! User not found</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.UsersController.AddUser(TestAPI.Controllers.Models.Requests.UserRequest)">
+            <summary>
+            Creates a specific user
+            </summary>
+            <response code="201">User created</response>
+            <response code="400">User has missing/invalid values</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.UsersController.AddUserV2(TestAPI.Controllers.Models.Requests.UserRequest)">
+            <summary>
+            Creates a specific user
+            </summary>
+            <response code="201">User created</response>
+            <response code="400">User has missing/invalid values</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.UsersController.UpdateUser(System.Int32,TestAPI.Controllers.Models.Requests.UserRequest)">
+            <summary>
+            Updates a specific user by unique id
+            </summary>
+            <response code="200">User updated</response>
+            <response code="400">User has missing/invalid values</response>
+            <response code="404">Oops! User not found</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.UsersController.UpdateUserV2(System.Int32,TestAPI.Controllers.Models.Requests.UserRequest)">
+            <summary>
+            Updates a specific user by unique id
+            </summary>
+            <response code="200">User updated</response>
+            <response code="400">User has missing/invalid values</response>
+            <response code="404">Oops! User not found</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.UsersController.DeleteUser(System.Int32)">
+            <summary>
+            Deletes a specific user by unique id
+            </summary>
+            <response code="200">User deleted</response>
+            <response code="404">Oops! Product not found</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="M:TestAPI.Controllers.V2.AccountController.LoginUser(TestAPI.Controllers.Models.Requests.UserLoginRequest)">
+            <summary>
+            Logs user
+            </summary>
+            <response code="200">User logged in</response>
+            <response code="500">Oops.. something went wrong</response>
+        </member>
+        <member name="T:TestAPI.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:TestAPI.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TestAPI.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TestAPI.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
